@@ -1,0 +1,140 @@
+body {
+  font-family: $font_actay;
+  font-size: 16px;
+  opacity: 0;
+  animation: showFade .3s ease forwards;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
+.section-block {
+  padding: 82px 0;
+
+  &--clear {
+    padding: 0 !important;
+  }
+
+  &__title {
+    color: #000;
+    font-family: $font_gill;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 56px;
+
+    @media (max-width: 992px) {
+      margin-bottom: 28px;
+      font-size: 26px;
+    }
+  }
+
+  &__title-light {
+    color: #E1E1E1;
+    font-family: $font_gill;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 56px;
+
+    @media (max-width: 992px) {
+      margin-bottom: 28px;
+      font-size: 26px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 40px 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 30px 0;
+  }
+}
+
+
+/**************************** options */
+.is-centered-text {
+  text-align: center;
+}
+
+/**************************** Swiper */
+.swiper-pagination {
+  bottom: 0;
+
+  .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    background: transparent !important;
+    opacity: 1 !important;
+    border-radius: 100%;
+    border: 1px solid #000;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #000 !important;
+  }
+
+}
+
+.swiper-button-prev {
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='26' cy='26' r='26' transform='matrix(-1 0 0 1 52 0)' fill='black'/%3E%3Cpath d='M16.6464 26.3536C16.4512 26.1583 16.4512 25.8417 16.6464 25.6464L19.8284 22.4645C20.0237 22.2692 20.3403 22.2692 20.5355 22.4645C20.7308 22.6597 20.7308 22.9763 20.5355 23.1716L17.7071 26L20.5355 28.8284C20.7308 29.0237 20.7308 29.3403 20.5355 29.5355C20.3403 29.7308 20.0237 29.7308 19.8284 29.5355L16.6464 26.3536ZM36 26.5L17 26.5L17 25.5L36 25.5L36 26.5Z' fill='white'/%3E%3C/svg%3E%0A");
+  background-size: contain;
+  width: 52px !important;
+  height: 52px !important;
+  display: block;
+  transition: all .3s ease;
+
+  &:hover {
+    opacity: .8 !important;
+  }
+
+  &:after {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    width: 36px !important;
+    height: 36px !important;
+    left: -15px !important;
+  }
+}
+
+.swiper-button-next {
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='26' cy='26' r='26' fill='black'/%3E%3Cpath d='M35.3536 26.3536C35.5488 26.1583 35.5488 25.8417 35.3536 25.6464L32.1716 22.4645C31.9763 22.2692 31.6597 22.2692 31.4645 22.4645C31.2692 22.6597 31.2692 22.9763 31.4645 23.1716L34.2929 26L31.4645 28.8284C31.2692 29.0237 31.2692 29.3403 31.4645 29.5355C31.6597 29.7308 31.9763 29.7308 32.1716 29.5355L35.3536 26.3536ZM16 26.5L35 26.5L35 25.5L16 25.5L16 26.5Z' fill='white'/%3E%3C/svg%3E%0A");
+  background-size: contain;
+  width: 52px !important;
+  height: 52px !important;
+  display: block;
+  transition: all .3s ease;
+
+  &:hover {
+    opacity: .8 !important;
+  }
+
+  &:after {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    width: 36px !important;
+    height: 36px !important;
+    right: -15px !important;
+  }
+}
+
+/**************************** Table */
+.table-wrap {
+  @media (max-width: 992px) {
+    overflow-x: auto;
+
+    //.rekvizits-table {
+    //  white-space: nowrap;
+    //}
+  }
+}

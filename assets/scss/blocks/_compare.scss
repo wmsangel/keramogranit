@@ -1,0 +1,121 @@
+.compare-page {
+  .product-teaser__favorite {
+    right: 18px;
+  }
+}
+
+.compare-page-visible {
+  margin-top: 32px;
+}
+
+.compare-table {
+  margin-top: 96px;
+
+  &__title {
+    color: #000;
+    font-family: $font_actay-wide;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  &__info {
+    display: flex;
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+    margin-bottom: 68px;
+    transition: all .3s ease;
+
+    &[data-products="1"] {
+      .compare-table-item {
+        width: calc(100% / 1);
+      }
+    }
+
+    &[data-products="2"] {
+      .compare-table-item {
+        width: calc(100% / 2);
+      }
+    }
+
+    &[data-products="3"] {
+      .compare-table-item {
+        width: calc(100% / 3);
+      }
+    }
+
+    &[data-products="4"] {
+      .compare-table-item {
+        width: calc(100% / 4);
+      }
+    }
+
+    &[data-products="5"] {
+      .compare-table-item {
+        width: calc(100% / 5);
+      }
+    }
+
+    &[data-products="6"] {
+      .compare-table-item {
+        width: calc(100% / 6);
+      }
+    }
+
+    &[data-products="7"] {
+      .compare-table-item {
+        width: calc(100% / 7);
+      }
+    }
+
+    &[data-products="8"] {
+      .compare-table-item {
+        width: calc(100% / 8);
+      }
+    }
+
+    &[data-products="9"] {
+      .compare-table-item {
+        width: calc(100% / 9);
+      }
+    }
+
+    &[data-products="10"] {
+      .compare-table-item {
+        width: calc(100% / 10);
+      }
+    }
+
+    &:hover {
+      background: #fafafa;
+    }
+  }
+}
+
+.compare-table-item {
+  padding: 22px 0;
+  text-align: center;
+  color: #808080;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 1px;
+    background: #E4E4E4;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    bottom: 8px;
+    display: block;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+}

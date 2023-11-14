@@ -1,0 +1,45 @@
+h1 {
+  color: #000;
+  font-family: $font_gill;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+  padding-bottom: 32px;
+  margin: 0;
+
+  @media (max-width: 992px) {
+    font-size: 24px;
+    padding-bottom: 18px;
+  }
+}
+
+h2 {
+  color: #000;
+  font-family: $font_actay-wide;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+
+  @media (max-width: 992px) {
+    font-size: 22px;
+  }
+}
+
+.blue-title {
+  color: #2155A2;
+  font-family: $font_actay-wide;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 38px;
+
+  span {
+    color: #C5C5C5;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+}

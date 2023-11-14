@@ -1,0 +1,234 @@
+@@include('../partials/header-inner.html')
+
+<!--inner-page-header-->
+<section class="page-header">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+                <a href="#" class="breadcrumbs-item__link">Главное</a>
+            </li>
+            <li class="breadcrumbs-item">
+                <a href="cart.html" class="breadcrumbs-item__link">Корзина</a>
+            </li>
+            <li class="breadcrumbs-item breadcrumbs-item--current">
+                Оформление заказа
+            </li>
+        </ul>
+        <h1>Оформление заказа</h1>
+    </div>
+</section>
+
+<section class="section-block">
+    <div class="container">
+        <div class="checkout-page">
+            <div class="checkout-page__form">
+                <div class="blue-title">
+                    Получатель <span>(1 шаг)</span>
+                </div>
+                <div class="box-bordered">
+                    <form action="">
+                        <div class="fields-row" data-cols="1">
+                            <div class="field-item">
+                                <div class="field-radio field-radio--group">
+                                    <label class="field-radio__label">
+                                        <input type="radio" name="user-type" value="Физическое лицо" checked>
+                                        Физическое лицо
+                                    </label>
+
+                                    <label class="field-radio__label">
+                                        <input type="radio" name="user-type" value="Юридическое лицо">
+                                        Юридическое лицо
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fields-row" data-cols="4">
+                            <div class="field-item">
+                                <input type="text" class="field-text-field" placeholder="Ваше ФИО" required>
+                            </div>
+                            <div class="field-item">
+                                <input type="text" class="field-text-field js-phone" placeholder="Ваш телефон" required>
+                            </div>
+                            <div class="field-item">
+                                <input type="text" class="field-text-field" placeholder="Ваш e-mail" required>
+                            </div>
+                        </div>
+                        <div class="fields-row" data-cols="2">
+                            <div class="field-item">
+                                <input type="text" class="field-text-field" placeholder="Ваш комментарий">
+                            </div>
+                        </div>
+                        <div class="fields-action fields-row">
+                            <div class="field-item">
+                                <button type="submit" class="btn btn-black btn-black--wide">Перейти далее</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="blue-title">
+                    Способ получения <span>(2 шаг)</span>
+                </div>
+                <div class="box-bordered">
+                    <form action="">
+                        <div class="fields-row" data-cols="1">
+                            <div class="field-item">
+                                <div class="field-radio field-radio--group">
+                                    <label class="field-radio__label">
+                                        <input type="radio" name="ship" value="Самовывоз" class="js-ship-check" data-ship="user" checked>
+                                        Самовывоз
+                                    </label>
+
+                                    <label class="field-radio__label">
+                                        <input type="radio" name="ship" value="Доставка" class="js-ship-check" data-ship="company">
+                                        Доставка
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fields-text fields-row tab-content js-ship-block is-selected" data-ship="user">
+                            <div class="field-item">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                            </div>
+                        </div>
+                        <div class="tab-content fields-row js-ship-block" data-ship="company" data-cols="4">
+                            <div class="field-item field-item--full">
+                                <div class="form-title">Адрес доставки:</div>
+                            </div>
+                            <div class="field-item">
+                                <input type="text" class="field-text-field" placeholder="Город" required>
+                            </div>
+                            <div class="field-item">
+                                <input type="text" class="field-text-field js-phone" placeholder="Улица" required>
+                            </div>
+                            <div class="field-item">
+                                <input type="text" class="field-text-field" placeholder="Дом" required>
+                            </div>
+                            <div class="field-item">
+                                <input type="text" class="field-text-field" placeholder="Квартира" required>
+                            </div>
+                            <div class="field-item field-item--full">
+                                <input type="text" class="field-text-field" placeholder="Комментарий для доставки">
+                            </div>
+                        </div>
+                        <div class="fields-action fields-row">
+                            <div class="field-item">
+                                <button type="submit" class="btn btn-black btn-black--wide">Перейти далее</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="blue-title">
+                    Оплата <span>(3 шаг)</span>
+                </div>
+                <div class="box-bordered">
+                    <form action="">
+                        <div class="fields-row" data-cols="1">
+                            <div class="field-item">
+                                <div class="field-radio field-radio--group">
+                                    <label class="field-radio__label">
+                                        <input type="radio" name="pay" value="Наличными при получении" checked>
+                                        Наличными при получении
+                                    </label>
+
+                                    <label class="field-radio__label">
+                                        <input type="radio" name="oay" value="Картой при получении">
+                                        Картой при получении
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fields-text fields-row">
+                            <div class="field-item">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="checkout-page__sidebar">
+                <div class="mini-cart">
+                    <div class="mini-cart__total-count">
+                        Всего товаров: 3 шт
+                    </div>
+                    <div class="mini-cart-list">
+                        <div class="mini-cart-list-item">
+                            <div class="mini-cart-list-item__img">
+                                <img src="assets/images/products/montag.jpeg" alt="">
+                            </div>
+                            <div class="mini-cart-list-item__info">
+                                <div class="mini-cart-list-item__info-title">
+                                    Зажим для укладки плитки
+                                </div>
+                                <div class="mini-cart-list-item__info-sku">
+                                    <span>Артикул:</span> 123456789
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mini-cart-list-item">
+                            <div class="mini-cart-list-item__img">
+                                <img src="assets/images/products/montag.jpeg" alt="">
+                            </div>
+                            <div class="mini-cart-list-item__info">
+                                <div class="mini-cart-list-item__info-title">
+                                    Зажим для укладки плитки
+                                </div>
+                                <div class="mini-cart-list-item__info-sku">
+                                    <span>Артикул:</span> 123456789
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mini-cart-list-item">
+                            <div class="mini-cart-list-item__img">
+                                <img src="assets/images/products/montag.jpeg" alt="">
+                            </div>
+                            <div class="mini-cart-list-item__info">
+                                <div class="mini-cart-list-item__info-title">
+                                    Зажим для укладки плитки
+                                </div>
+                                <div class="mini-cart-list-item__info-sku">
+                                    <span>Артикул:</span> 123456789
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mini-cart__ship">
+                        <div class="mini-cart__ship-title">Доставка: </div>
+                        <div class="mini-cart__ship-value">180 руб</div>
+                    </div>
+                    <div class="mini-cart__total">
+                        <div class="mini-cart__total-title">
+                            ИТОГО:
+                        </div>
+                        <div class="mini-cart__total-value">
+                            23 856 руб/м<sup><small>2</small></sup>
+                        </div>
+                    </div>
+                    <div class="mini-cart__user-data">
+                        <div class="field-checkbox">
+                            <label class="field-checkbox__label">
+                                <input type="checkbox">
+                                Согласен на обработку <a href="#">персональных данных</a>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mini-cart__btn">
+                        <a href="#" class="btn btn-black btn-black--full-width">Оформить заказ</a>
+                    </div>
+                </div>
+
+                <div class="cart-contacts">
+                    <a href="#" class="social-link social-link__wa"></a>
+                    <a href="#" class="social-link social-link__viber"></a>
+                    <a href="#" class="social-link social-link__tg"></a>
+                    <a href="#" class="social-link social-link__vk"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@@include('../partials/footer.html')

@@ -1,0 +1,886 @@
+@@include('../partials/header-inner.html')
+
+<!--inner-page-header-->
+<section class="page-header">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+                <a href="index.html" class="breadcrumbs-item__link">Главное</a>
+            </li>
+            <li class="breadcrumbs-item">
+                <a href="catalog.html" class="breadcrumbs-item__link">Каталог</a>
+            </li>
+            <li class="breadcrumbs-item breadcrumbs-item--current">
+                Керамическая плитка
+            </li>
+        </ul>
+        <h1>Керамическая плитка</h1>
+    </div>
+</section>
+
+<!--collection catalog-->
+<section class="section-block">
+    <div class="container">
+        <div class="filter-block">
+            <div class="filter-block__title">
+                Фильтры
+            </div>
+            <form action="" class="filter-block-form js-filter-row">
+                <div class="filter-block-form__fields">
+                    <div class="filter-row">
+                        <div class="filter-field">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Цена</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="price-range-results">
+                                        <div class="price-range-from" id="js-price-range-from"></div>
+                                        <div class="price-range-to" id="js-price-range-to"></div>
+                                    </div>
+                                    <div id="js-price-range"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-field">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Производитель</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 1
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 2
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 3
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-field">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Помещение</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Для кухни
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Для ванной
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Для фасада
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Для кухни
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-field">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Назначение</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Для кухни
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Для ванной
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Для фасада
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Для кухни
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-field">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Производитель</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 1
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 2
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 3
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-field">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Производитель</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 1
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 2
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 3
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-field">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Производитель</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 1
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 2
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 3
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-field">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Производитель</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 1
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 2
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 3
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-field">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Производитель</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 1
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 2
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 3
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-field filter-field--more">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Производитель</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 1
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 2
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 3
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-field filter-field--more">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Производитель</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 1
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 2
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 3
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-field filter-field--more">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Производитель</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 1
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 2
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 3
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-field filter-field--more">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Производитель</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 1
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 2
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 3
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-field filter-field--more">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Производитель</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 1
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 2
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 3
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-field filter-field--more">
+                            <div class="filter-dropdown js-filter-dropdown">
+                                <button class="filter-dropdown__title js-filter-dropdown-btn">Производитель</button>
+                                <div class="filter-dropdown-content">
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 1
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 2
+                                        </label>
+                                    </div>
+                                    <div class="field-checkbox field-checkbox--small">
+                                        <label class="field-checkbox__label">
+                                            <input type="checkbox">
+                                            Производитель 3
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-block-form__action">
+                    <button type="submit" class="btn btn-blue btn-filter js-filter-more">Все фильтры</button>
+                    <a href="#" class="btn btn-remove">Сбросить все фильтры</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="catalog-header-nav">
+            <div class="catalog-header-nav__left">
+                <div class="catalog-header__nav">
+                    <a href="catalog-products.html" class="catalog-nav-link is-selected">
+                        Коллекции <span>(556)</span>
+                    </a>
+
+                    <a href="catalog-collections.html" class="catalog-nav-link">
+                        Товары <span>(830)</span>
+                    </a>
+                </div>
+            </div>
+            <div class="catalog-header-nav__right">
+                <div class="sort">
+                    <div class="sort__title">
+                        Сортировать:
+                    </div>
+                    <div class="sort__list">
+                        <a href="#" class="sort__list-link is-selected">по популярности</a>
+                        <a href="#" class="sort__list-link">по возрастанию цены</a>
+                        <a href="#" class="sort__list-link">по убыванию цены</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="products" data-products="3">
+            <div class="product-teaser product-teaser--collections">
+                <a href="#" class="product-teaser__link"></a>
+                <div class="product-teaser__img">
+                    <img src="assets/images/projects/project_1.png" srcset="assets/images/projects/project_1@2x.png 2x" alt="">
+                </div>
+                <div class="product-teaser__title">
+                    <div class="product-teaser__title-name">
+                        Italon Charme Deluxe Invisible
+                        White Lux
+                    </div>
+                    <div class="product-teaser__title-brand">
+                        <img src="assets/images/brands/1.png" alt="">
+                    </div>
+                    <img src="assets/images/flags/ru.png" alt="" class="product-teaser__title-country">
+                </div>
+                <div class="product-teaser__info">
+                    <div class="product-teaser__info-country">
+                        <span>Производитель:</span>
+                        <img src="assets/images/flags/ru.png" alt="">
+                        Россия
+                    </div>
+                </div>
+                <div class="product-teaser__info">
+                    <div class="product-teaser__info-size">
+                        <span>Размер:</span> 80х80 см, 80х160, 60х120, 20х160 см
+                    </div>
+                </div>
+                <div class="product-teaser__options">
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_2.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_2.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_2.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_2.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_1.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_2.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_3.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_1.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_2.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_3.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_3.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-more">
+                        <a href="#" class="js-more-options option-more-link">ещё</a>
+                    </div>
+                </div>
+                <div class="product-teaser__footer">
+                    <div class="product-teaser__footer-price">
+                        <span>Цена:</span>
+                        от 4 560 руб/м2
+
+                        <span class="old-price">5 560 руб/м2</span>
+                    </div>
+                    <div class="product-teaser__footer-btn">
+                        <a href="#" class="btn btn-black">К товарам</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-teaser product-teaser--collections">
+                <a href="#" class="product-teaser__link"></a>
+                <div class="product-teaser__img">
+                    <img src="assets/images/projects/project_1.png" srcset="assets/images/projects/project_1@2x.png 2x" alt="">
+                </div>
+                <div class="product-teaser__title">
+                    <div class="product-teaser__title-name">
+                        Italon Charme Deluxe Invisible
+                        White Lux
+                    </div>
+                    <div class="product-teaser__title-brand">
+                        <img src="assets/images/brands/1.png" alt="">
+                    </div>
+                    <img src="assets/images/flags/ru.png" alt="" class="product-teaser__title-country">
+                </div>
+                <div class="product-teaser__info">
+                    <div class="product-teaser__info-country">
+                        <span>Производитель:</span>
+                        <img src="assets/images/flags/ru.png" alt="">
+                        Россия
+                    </div>
+                </div>
+                <div class="product-teaser__info">
+                    <div class="product-teaser__info-size">
+                        <span>Размер:</span> 80х80 см, 80х160, 60х120, 20х160 см
+                    </div>
+                </div>
+                <div class="product-teaser__options">
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_2.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_2.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_2.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_2.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_1.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_2.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_3.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_1.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_2.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_3.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_3.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-more">
+                        <a href="#" class="js-more-options option-more-link">ещё</a>
+                    </div>
+                </div>
+                <div class="product-teaser__footer">
+                    <div class="product-teaser__footer-price">
+                        <span>Цена:</span>
+                        от 4 560 руб/м2
+
+                        <span class="old-price">5 560 руб/м2</span>
+                    </div>
+                    <div class="product-teaser__footer-btn">
+                        <a href="#" class="btn btn-black">К товарам</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-teaser product-teaser--collections">
+                <a href="#" class="product-teaser__link"></a>
+                <div class="product-teaser__img">
+                    <img src="assets/images/projects/project_1.png" srcset="assets/images/projects/project_1@2x.png 2x" alt="">
+                </div>
+                <div class="product-teaser__title">
+                    <div class="product-teaser__title-name">
+                        Italon Charme Deluxe Invisible
+                        White Lux
+                    </div>
+                    <div class="product-teaser__title-brand">
+                        <img src="assets/images/brands/1.png" alt="">
+                    </div>
+                    <img src="assets/images/flags/ru.png" alt="" class="product-teaser__title-country">
+                </div>
+                <div class="product-teaser__info">
+                    <div class="product-teaser__info-country">
+                        <span>Производитель:</span>
+                        <img src="assets/images/flags/ru.png" alt="">
+                        Россия
+                    </div>
+                </div>
+                <div class="product-teaser__info">
+                    <div class="product-teaser__info-size">
+                        <span>Размер:</span> 80х80 см, 80х160, 60х120, 20х160 см
+                    </div>
+                </div>
+                <div class="product-teaser__options">
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_2.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_2.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_2.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_2.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more-mobile">
+                        <a href="#" class="product-teaser__options-item__link"><img src="assets/images/products/product_3.jpg" alt=""></a>
+                    </div>
+
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_1.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_2.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_3.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_1.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_2.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_3.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-item product-teaser__options-item--more">
+                        <img src="assets/images/products/product_3.jpg" alt="">
+                    </div>
+                    <div class="product-teaser__options-more">
+                        <a href="#" class="js-more-options option-more-link">ещё</a>
+                    </div>
+                </div>
+                <div class="product-teaser__footer">
+                    <div class="product-teaser__footer-price">
+                        <span>Цена:</span>
+                        от 4 560 руб/м2
+
+                        <span class="old-price">5 560 руб/м2</span>
+                    </div>
+                    <div class="product-teaser__footer-btn">
+                        <a href="#" class="btn btn-black">К товарам</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-more">
+            <a href="#" class="products-more__link">Загрузить еще</a>
+        </div>
+
+        <ul class="pagination">
+            <li class="pagination-item">
+                <a href="#" class="pagination-item__link pagination-item__link--active">1</a>
+            </li>
+            <li class="pagination-item">
+                <a href="#" class="pagination-item__link">2</a>
+            </li>
+            <li class="pagination-item">
+                <a href="#" class="pagination-item__link">3</a>
+            </li>
+            <li class="pagination-item">
+                <a href="#" class="pagination-item__link">...</a>
+            </li>
+            <li class="pagination-item">
+                <a href="#" class="pagination-item__link">12</a>
+            </li>
+        </ul>
+
+        <div class="category-my-like">
+            <div class="section-block__title">
+                Вам может понравиться
+            </div>
+
+            <div class="categories-slider">
+                <div class="swiper js-category-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="catalog-category-item">
+                                <a href="#" class="catalog-category-item__link"></a>
+                                <div class="catalog-category-item__title">
+                                    Керамическая плитка
+                                </div>
+                                <div class="catalog-category-item__text">
+                                    В данном разделе предоставлен ассортимент керамической плитки
+                                </div>
+                                <div class="catalog-category-item__arrow"></div>
+                                <div class="catalog-category-item__img">
+                                    <img src="assets/images/categories/keram-plitka.png"
+                                         srcset="assets/images/categories/keram-plitka@2x.png 2x"
+                                         alt="">
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="catalog-category-item">
+                                <a href="#" class="catalog-category-item__link"></a>
+                                <div class="catalog-category-item__title">
+                                    Клей для плитки
+                                </div>
+                                <div class="catalog-category-item__text">
+                                    В данном разделе предоставлен ассортимент
+                                    различного клея для плитки
+                                </div>
+                                <div class="catalog-category-item__arrow"></div>
+                                <div class="catalog-category-item__img">
+                                    <img src="assets/images/categories/klei.png"
+                                         srcset="assets/images/categories/klei@2x.png 2x"
+                                         alt="">
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="catalog-category-item">
+                                <a href="#" class="catalog-category-item__link"></a>
+                                <div class="catalog-category-item__title">
+                                    Затирка для плитки
+                                </div>
+                                <div class="catalog-category-item__text">
+                                    В данном разделе предоставлен ассортимент
+                                    затирки для керамической плитки
+                                </div>
+                                <div class="catalog-category-item__arrow"></div>
+                                <div class="catalog-category-item__img">
+                                    <img src="assets/images/categories/zatirka.png"
+                                         srcset="assets/images/categories/zatirka@2x.png 2x"
+                                         alt="">
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="catalog-category-item">
+                                <a href="#" class="catalog-category-item__link"></a>
+                                <div class="catalog-category-item__title">
+                                    Аксессуары для плитки
+                                </div>
+                                <div class="catalog-category-item__text">
+                                    В данном разделе предоставлен ассортимент
+                                    различных аксессуаров и вспомогательных
+                                    материалов для работы с плиткой
+                                </div>
+                                <div class="catalog-category-item__arrow"></div>
+                                <div class="catalog-category-item__img">
+                                    <img src="assets/images/categories/accessosuare.png"
+                                         srcset="assets/images/categories/accessosuare@2x.png 2x"
+                                         alt="">
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="js-category-slider-nav swiper-button-prev"></div>
+                <div class="js-category-slider-nav swiper-button-next"></div>
+            </div>
+        </div>
+
+        <div class="text-block">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+
+    </div>
+</section>
+
+
+@@include('../partials/footer.html')

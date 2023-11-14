@@ -1,0 +1,161 @@
+/**************************** Catalog page */
+.catalog-category {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -19px -12px;
+
+  @media (max-width: 767px) {
+    marign: 0;
+  }
+}
+
+.catalog-category-item {
+  width: calc(100% / 2 - 24px);
+  margin: 19px 12px;
+  height: 558px;
+  border-radius: 20px;
+  background: #080708;
+  position: relative;
+  padding: 72px 250px 72px 66px;
+  overflow: hidden;
+  transition: all .3s ease;
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+  }
+
+  &__title {
+    color: #FFF;
+    font-family: $font_actay-wide;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 3;
+
+    @media (max-width: 600px) {
+      font-size: 4.5vw;
+    }
+  }
+
+  &__text {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+    position: relative;
+    z-index: 3;
+
+    @media (max-width: 600px) {
+      font-size: 3vw;
+      line-height: 1.4;
+    }
+  }
+
+  &__arrow {
+    background-image: url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='23' cy='23' r='23' fill='white'/%3E%3Cpath d='M29.5 18C29.5 17.7239 29.2761 17.5 29 17.5L24.5 17.5C24.2239 17.5 24 17.7239 24 18C24 18.2761 24.2239 18.5 24.5 18.5L28.5 18.5L28.5 22.5C28.5 22.7761 28.7239 23 29 23C29.2761 23 29.5 22.7761 29.5 22.5L29.5 18ZM18.3536 29.3536L29.3536 18.3536L28.6464 17.6464L17.6464 28.6464L18.3536 29.3536Z' fill='black'/%3E%3C/svg%3E%0A");
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    bottom: 52px;
+    left: 66px;
+    z-index: 2;
+
+    @media (max-width: 1200px) {
+      left: 32px;
+      bottom: 32px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    img {
+      transition: all .3s ease;
+    }
+
+    @media (max-width: 1200px) {
+      opacity: .5;
+    }
+
+    @media (max-width: 767px) {
+      opacity: .3;
+      height: 70%;
+      width: 50%;
+      display: flex;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: right bottom;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+  }
+
+  &:hover &__img {
+    img {
+      transform: scale(1.03);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    padding: 32px 32px 100px 32px;
+    height: auto;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.category-my-like {
+  margin-top: 58px;
+}
+
+.categories-slider {
+  position: relative;
+  padding-bottom: 60px;
+
+  @media (min-width: 1761px) {
+    padding-bottom: 0;
+    .swiper-pagination {
+      display: none;
+    }
+  }
+
+  .catalog-category-item {
+    width: 100%;
+    margin: 0;
+  }
+
+  .swiper-button-prev {
+    left: -77px;
+
+    @media (max-width: 1760px) {
+      display: none;
+    }
+  }
+
+  .swiper-button-next {
+    right: -77px;
+
+    @media (max-width: 1760px) {
+      display: none;
+    }
+  }
+}

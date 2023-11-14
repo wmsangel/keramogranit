@@ -1,0 +1,98 @@
+.subscribe {
+  background: url('assets/images/subscribe-bg.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 70px 50px;
+  border-radius: 20px;
+  margin: 80px -50px 50px;
+  width: calc(100% + 100px);
+
+  &__left {
+    width: 40%;
+
+    @media (max-width: 1200px) {
+      width: 30%;
+    }
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+
+  &__form {
+    width: 60%;
+
+    .field-text-field {
+      background: transparent;
+      border-bottom: 1px solid #fff;
+      height: 56px;
+      color: #fff;
+      padding-top: 10px;
+    }
+
+    .fields-row[data-cols="3"] {
+      .field-item {
+        width: calc(100% / 3 - 60px);
+        margin: 30px;
+
+        @media (max-width: 992px) {
+          width: calc(100% / 3 - 10px);
+          margin: 5px;
+        }
+
+        @media (max-width: 600px) {
+          width: calc(100% / 1);
+          margin: 10px 0;
+        }
+      }
+
+      @media (max-width: 600px) {
+        margin: 0;
+      }
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+      width: 70%;
+    }
+
+    @media (max-width: 992px) {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  &__title {
+    color: #FFF;
+    font-family: $font_gill;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  @media (max-width: 1700px) {
+    width: 100%;
+    margin: 80px 0 50px;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 32px;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
+  }
+}

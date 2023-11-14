@@ -1,0 +1,70 @@
+.error-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  position: relative;
+
+  @media (max-width: 1200px) {
+    padding: 0 40px;
+  }
+
+  &:before {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='22' height='108' viewBox='0 0 22 108' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.6254 44.25L18.7754 75.3H3.17539L0.625391 44.25V0H21.6254V44.25ZM0.0253906 96.3C0.0253906 90 4.37539 85.5 11.1254 85.5C17.5754 85.5 21.9254 90 21.9254 96.3C21.9254 103.05 17.5754 107.25 11.1254 107.25C4.37539 107.25 0.0253906 103.05 0.0253906 96.3Z' fill='%23EFEFEF'/%3E%3C/svg%3E%0A");
+    width: 22px;
+    height: 108px;
+    position: absolute;
+    bottom: 60px;
+    left: 100px;
+
+    @media (max-width: 1480px) {
+      left: 0;
+    }
+  }
+
+  &:after {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='22' height='108' viewBox='0 0 22 108' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.6254 44.25L18.7754 75.3H3.17539L0.625391 44.25V0H21.6254V44.25ZM0.0253906 96.3C0.0253906 90 4.37539 85.5 11.1254 85.5C17.5754 85.5 21.9254 90 21.9254 96.3C21.9254 103.05 17.5754 107.25 11.1254 107.25C4.37539 107.25 0.0253906 103.05 0.0253906 96.3Z' fill='%23EFEFEF'/%3E%3C/svg%3E%0A");
+    width: 22px;
+    height: 108px;
+    position: absolute;
+    top: 60px;
+    right: 100px;
+
+    @media (max-width: 1480px) {
+      right: 0;
+    }
+  }
+
+  &__title {
+    color: #EFEFEF;
+    font-family: $font_actay-wide;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @media (max-width: 1200px) {
+      font-size: 60px;
+    }
+  }
+
+  &__text {
+    color: #000;
+    font-family: $font_actay-wide;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 730px;
+    text-align: center;
+    margin-bottom: 34px;
+
+    @media (max-width: 1200px) {
+      font-size: 18px;
+    }
+  }
+}

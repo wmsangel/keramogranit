@@ -1,0 +1,254 @@
+/**************************** Contacts page */
+.contacts-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__info {
+    width: 480px;
+
+    p {
+      &:not(:first-child) {
+        margin-top: 30px;
+
+        @media (max-width: 1024px) {
+          margin-top: 18px;
+        }
+      }
+    }
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__map {
+    width: calc(100% - 480px);
+    padding-left: 100px;
+
+    iframe {
+      width: 100%;
+      height: 506px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 1200px) {
+      padding-left: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+
+  &__info-btns {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    flex-wrap: wrap;
+
+    .social-link {
+      margin: 0 6px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__social {
+    margin-top: 22px;
+  }
+}
+
+.rekvizits {
+  margin-top: 54px;
+}
+
+.rekvizits-table {
+  border-radius: 10px;
+  border: 1px solid #000;
+
+  &__col-name {
+    display: inline-flex;
+    align-items: center;
+    width: 400px;
+    color: #000;
+    font-family: $font_actay-wide;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0 12px 0 46px;
+    background: #F6F6F6;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background: #000;
+
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+
+    &:before {
+      content: '';
+      width: calc(100% - 18px);
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: #000;
+
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      padding-left: 20px;
+      width: 240px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 10px 10px 0 0 !important;
+    }
+  }
+
+  &__col-value {
+    width: calc(100% - 400px);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 84px;
+    padding-right: 20px;
+    &:before {
+      content: '';
+      width: calc(100% - 18px);
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: #000;
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      width: calc(100% - 240px);
+      padding-left: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 10px 10px 0 0 !important;
+    }
+  }
+}
+
+.rekvizits-table-row {
+  display: flex;
+  min-height: 69px;
+
+  &--head {
+    div:first-child {
+      border-radius: 9px 0 0 0 !important;
+    }
+    div:last-child {
+      border-radius: 0 9px 0 0 !important;
+    }
+    .rekvizits-table__col-name {
+      background: #000;
+      color: #fff;
+      justify-content: center;
+      font-weight: 600;
+    }
+    .rekvizits-table__col-value {
+      background: #000;
+      color: #fff;
+      justify-content: center;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &:first-child {
+    .rekvizits-table__col-name {
+      border-radius: 10px 0 0 10px;
+      &:after {
+        content: '';
+        width: 1px;
+        height: calc(100% - 18px);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: #000;
+      }
+    }
+  }
+
+  &:last-child {
+    .rekvizits-table__col-name {
+      &:after {
+        top: 0;
+        bottom: auto;
+        height: calc(100% - 18px);
+      }
+    }
+    .rekvizits-table__col-value,
+    .rekvizits-table__col-name {
+      border-radius: 10px 0 0 10px;
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
+}
+
+.product-slider-block {
+  position: relative;
+  margin-bottom: 64px;
+
+  .swiper {
+    padding: 20px 0 !important;
+  }
+
+  .swiper-button-next {
+    right: -77px;
+
+    @media (max-width: 1760px) {
+      right: 0;
+    }
+  }
+
+  .swiper-button-prev {
+    left: -77px;
+
+    @media (max-width: 1760px) {
+      left: 0;
+    }
+  }
+}

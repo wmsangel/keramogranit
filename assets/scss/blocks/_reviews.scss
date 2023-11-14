@@ -1,0 +1,208 @@
+#section-reviews {
+  overflow: hidden;
+
+  .swiper-button-prev {
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='26' cy='26' r='26' transform='matrix(-1 0 0 1 52 0)' fill='black'/%3E%3Cpath d='M16.6464 26.3536C16.4512 26.1583 16.4512 25.8417 16.6464 25.6464L19.8284 22.4645C20.0237 22.2692 20.3403 22.2692 20.5355 22.4645C20.7308 22.6597 20.7308 22.9763 20.5355 23.1716L17.7071 26L20.5355 28.8284C20.7308 29.0237 20.7308 29.3403 20.5355 29.5355C20.3403 29.7308 20.0237 29.7308 19.8284 29.5355L16.6464 26.3536ZM36 26.5L17 26.5L17 25.5L36 25.5L36 26.5Z' fill='white'/%3E%3C/svg%3E%0A");
+    width: 52px;
+    height: 52px;
+    display: block;
+    left: -77px;
+
+    &:after {
+      display: none;
+    }
+
+    @media (max-width: 1760px) {
+      left: 0;
+    }
+  }
+
+  .swiper-button-next {
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='26' cy='26' r='26' fill='black'/%3E%3Cpath d='M35.3536 26.3536C35.5488 26.1583 35.5488 25.8417 35.3536 25.6464L32.1716 22.4645C31.9763 22.2692 31.6597 22.2692 31.4645 22.4645C31.2692 22.6597 31.2692 22.9763 31.4645 23.1716L34.2929 26L31.4645 28.8284C31.2692 29.0237 31.2692 29.3403 31.4645 29.5355C31.6597 29.7308 31.9763 29.7308 32.1716 29.5355L35.3536 26.3536ZM16 26.5L35 26.5L35 25.5L16 25.5L16 26.5Z' fill='white'/%3E%3C/svg%3E%0A");
+    width: 52px;
+    height: 52px;
+    display: block;
+    right: -77px;
+
+    &:after {
+      display: none;
+    }
+
+    @media (max-width: 1760px) {
+      right: 0;
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 0;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .swiper {
+    overflow: visible;
+    margin-top: 110px;
+    padding-bottom: 110px;
+
+    &:before {
+      content: '';
+      background-image: url("data:image/svg+xml,%3Csvg width='67' height='50' viewBox='0 0 67 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M52.8 50C48.1333 50 44.2667 48.4667 41.2 45.4C38.2667 42.3333 36.8 37.9333 36.8 32.2C36.8 26.0667 38.5333 20 42 14C45.6 8.00001 50.6 3.33334 57 0L61.6 7C54.6667 11.8 50.5333 17.8667 49.2 25.2C50.4 24.6667 51.8 24.4 53.4 24.4C57.1333 24.4 60.2 25.6 62.6 28C65 30.4 66.2 33.4667 66.2 37.2C66.2 40.9333 64.9333 44 62.4 46.4C59.8667 48.8 56.6667 50 52.8 50ZM16 50C11.3333 50 7.46667 48.4667 4.4 45.4C1.46667 42.3333 0 37.9333 0 32.2C0 26.0667 1.73333 20 5.2 14C8.8 8.00001 13.8 3.33334 20.2 0L24.8 7C17.8667 11.8 13.7333 17.8667 12.4 25.2C13.6 24.6667 15 24.4 16.6 24.4C20.3333 24.4 23.4 25.6 25.8 28C28.2 30.4 29.4 33.4667 29.4 37.2C29.4 40.9333 28.1333 44 25.6 46.4C23.0667 48.8 19.8667 50 16 50Z' fill='%23E6E6E6'/%3E%3C/svg%3E%0A");
+      width: 67px;
+      height: 50px;
+      position: absolute;
+      top: -10px;
+      left: 180px;
+
+      @media (max-width: 1024px) {
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:after {
+      content: '';
+      background-image: url("data:image/svg+xml,%3Csvg width='67' height='50' viewBox='0 0 67 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.3999 50C18.0666 50 21.9333 48.4667 25 45.4C27.9333 42.3333 29.3999 37.9333 29.3999 32.2C29.3999 26.0667 27.6666 20 24.2 14C20.5999 8.00001 15.6 3.33334 9.19995 0L4.59995 7C11.5333 11.8 15.6666 17.8667 16.9999 25.2C15.7999 24.6667 14.3999 24.4 12.7999 24.4C9.06662 24.4 5.99995 25.6 3.59995 28C1.19994 30.4 -5.34058e-05 33.4667 -5.34058e-05 37.2C-5.34058e-05 40.9333 1.26661 44 3.79994 46.4C6.33328 48.8 9.53328 50 13.3999 50ZM50.2 50C54.8666 50 58.7333 48.4667 61.8 45.4C64.7333 42.3333 66.2 37.9333 66.2 32.2C66.2 26.0667 64.4666 20 61 14C57.4 8.00001 52.4 3.33334 46 0L41.4 7C48.3333 11.8 52.4666 17.8667 53.8 25.2C52.5999 24.6667 51.2 24.4 49.6 24.4C45.8666 24.4 42.7999 25.6 40.3999 28C37.9999 30.4 36.7999 33.4667 36.7999 37.2C36.7999 40.9333 38.0666 44 40.5999 46.4C43.1333 48.8 46.3333 50 50.2 50Z' fill='%23E6E6E6'/%3E%3C/svg%3E%0A");
+      width: 67px;
+      height: 50px;
+      position: absolute;
+      bottom: 0;
+      right: 180px;
+
+      @media (max-width: 1024px) {
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      margin-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .swiper-slide {
+    width: 60% !important;
+    transition: all .3s ease;
+    padding: 30px 70px;
+
+    &:not(.swiper-slide-active) {
+      opacity: .2;
+    }
+
+    @media (max-width: 1024px) {
+      width: 80% !important;
+      padding: 16px 20px;
+    }
+  }
+}
+
+.review-slide {
+  &__user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__user-avatar {
+    width: 66px;
+    min-width: 66px;
+    height: 66px;
+    margin-right: 24px;
+
+    img {
+      border-radius: 100%;
+    }
+  }
+
+  &__user-name {
+
+  }
+
+  &__user-name-city {
+    color: #808080;
+    font-family: $font_actay-wide;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+
+    @media (max-width: 1024px) {
+      font-size: 12px;
+    }
+  }
+
+  &__user-name-info {
+    color: #000;
+    font-family: $font_actay-wide;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    margin-top: 54px;
+    color: #000;
+    text-align: center;
+    font-family: $font_actay-wide;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+
+    @media (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 1.3;
+      padding-bottom: 40px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.other-reviews {
+  margin-top: 100px;
+}
+
+.other-reviews-list {
+  padding: 0 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    padding: 0;
+
+    .other-reviews-item {
+      padding: 0 20px;
+    }
+  }
+}
+
+.other-reviews-item {
+  a {
+    img {
+      transition: all .3s ease;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.06);
+      }
+    }
+  }
+}
+
+.reviews-block {
+  margin: 30px 0 80px;
+}
