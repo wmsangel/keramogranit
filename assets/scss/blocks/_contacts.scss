@@ -230,10 +230,10 @@
 
 .product-slider-block {
   position: relative;
-  margin-bottom: 64px;
 
   .swiper {
-    padding: 20px 0 !important;
+    padding: 20px 0 150px 0 !important;
+    height: auto;
   }
 
   .swiper-button-next {

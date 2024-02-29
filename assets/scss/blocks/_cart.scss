@@ -188,6 +188,11 @@
     min-width: 106px;
 
     .btn {
+
+      &.btn-remove {
+        margin-right: 11px;
+      }
+
       &+.btn {
         margin-top: 10px;
 

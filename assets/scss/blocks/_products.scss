@@ -158,6 +158,12 @@
   }
 }
 
+.swiper-slide {
+  .product-teaser {
+    height: 100%;
+  }
+}
+
 .product-teaser {
   background: #fff;
   border-radius: 10px;
@@ -829,6 +835,7 @@
 
 /**************************** Popular */
 #section-popular {
+  padding-bottom: 0;
   .container {
     position: relative;
 
@@ -877,6 +884,7 @@
 
     .swiper-slide {
       padding-top: 16px;
+      height: auto;
     }
   }
 
